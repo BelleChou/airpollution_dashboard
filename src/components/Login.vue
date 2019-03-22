@@ -38,7 +38,7 @@ export default {
       }
       this.$store.dispatch('userLogin',obj).then(
          (res) => {
-
+           console.log(res)
         }
       )
       this.$router.push('/todolist')
