@@ -8,8 +8,9 @@ import 'element-ui/lib/theme-chalk/index.css'
 import store from './store/index.js'
 Vue.use(ElementUI) // Vue全局使用
 Vue.config.productionTip = false
-
-/* eslint-disable no-new */
+import '@/style/style.scss'
+import echarts from 'echarts' 
+Vue.prototype.$echarts = echarts //引入组件
 new Vue({
   el: '#app',
   router,

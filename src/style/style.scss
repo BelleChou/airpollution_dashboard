@@ -1,0 +1,39 @@
+// reset
+html,body,#app{
+
+    height: 100%;
+   
+}
+p {
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin: 0;
+    font-weight: normal;
+  }
+  input,
+  button {
+    border: 0;
+  }
+  .page {
+    margin: 0 auto;
+    background:url('../assets/bg.jpg');
+  }
+  .container {
+    min-height: 100vh;
+    padding-bottom: 54px;
+    box-sizing: border-box;
+  }
+  
+  .footer {
+    margin-top: -54px;
+    line-height: 54px;
+    text-align: center;
+  }
+  
+  .fr {
+    float: right;
+  }
