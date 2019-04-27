@@ -1,0 +1,37 @@
+{
+    "data":[
+            {
+                "id":0,
+                "theme":"Disclosure of air pollution",
+                "percent":20
+            },
+            {
+                "id":1,
+                "theme":"Dissatisfaction with the poor air quality",
+                "percent":40
+            },
+            {
+                "id":2,
+                "theme":"Report of behavioral changes",
+                "percent":20
+            },
+            {
+                "id":3,
+                "theme":"Health concern for his or her health",
+                "percent":30
+            },
+            {
+                "id":4,
+                "theme":"Evaluation of government policy",
+                "percent":5
+            },
+            {
+                "id":5,
+                "theme":"Appeal to the government to reduce air pollution",
+                "percent":40
+            }
+            
+            
+
+      ]  
+}
