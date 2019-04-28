@@ -1,0 +1,37 @@
+{
+    "data":[
+            {
+                "id":0,
+                "disease":"Tony Stark",
+                "percent":20
+            },
+            {
+                "id":1,
+                "disease":"Taylor Swift",
+                "percent":40
+            },
+            {
+                "id":2,
+                "disease":"Iron Man",
+                "percent":20
+            },
+            {
+                "id":3,
+                "disease":"Health concern for his or her health",
+                "percent":30
+            },
+            {
+                "id":4,
+                "disease":"Evaluation of government policy",
+                "percent":5
+            },
+            {
+                "id":5,
+                "disease":"Appeal to the government to reduce air pollution",
+                "percent":40
+            }
+            
+            
+
+      ]  
+}

@@ -16,7 +16,6 @@
 
 </template>
 <script>
-import header from './header.vue';
 import { mapGetters } from 'vuex'
 
 export default {
@@ -111,7 +110,7 @@ export default {
         }
     },
     components:{
-    'v-header':header,
+    
     },
     
 }

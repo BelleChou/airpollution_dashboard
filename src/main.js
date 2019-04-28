@@ -11,6 +11,10 @@ Vue.config.productionTip = false
 import '@/style/style.scss'
 import echarts from 'echarts' 
 Vue.prototype.$echarts = echarts //引入组件
+//添加字符云，前提要有echarts
+import 'echarts-wordcloud/dist/echarts-wordcloud'
+import 'echarts-wordcloud/dist/echarts-wordcloud.min'
+
 new Vue({
   el: '#app',
   router,

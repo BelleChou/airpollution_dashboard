@@ -7,16 +7,16 @@
       </div>
       <div class="flex-container column">
           <div class="item one" @click="clickChart('1')" style="transform: translate(-22.4%,-33.5%) scale(0.33)">
-            <h1>1</h1>
+            <city-posting></city-posting>
           </div>
           <div class="item two" @click="clickChart('2')" style="transform: translate(-22.4%,0.5%) scale(0.33)">
-            <h1>dksajkdjask222222</h1>
+            <Map></Map>
           </div>
           <div class="item three" @click="clickChart('3')" style="transform: translate(-22.4%,34.5%) scale(0.33)">
-            <h1>dksajkdjask3333333333</h1>
+            <Disease></Disease>
           </div>
           <div class="item four active" @click="clickChart('4')" style="transform: translate(43.7%, 0) scale(1)">
-            <Theme></Theme>>
+            <Theme></Theme>
           </div>
       </div>
     </div>
@@ -30,6 +30,9 @@
   import Footer from './Footer.vue'
   import HeaderLogo from '@/assets/header.png'
   import Theme from './Theme.vue'
+  import Disease from './Disease.vue'
+  import Map from './Map.vue'
+  import CityPosting from './CityPosting.vue'
 
 export default {
   data() {
@@ -73,7 +76,10 @@ export default {
   },
   components: {
     Footer,
-    Theme
+    Theme,
+    Disease,
+    Map,
+    CityPosting
     
   }
 }

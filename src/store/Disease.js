@@ -1,22 +1,22 @@
 import axios from 'axios'
 const state = {
-    theme_data:[],
+    disease_data:[],
   }
   
   // getters
   const getters = {
-    themeData: (state) => {
-      return state.theme_data;
+    diseaseData: (state) => {
+      return state.disease_data;
     },
 }
   
   // actions
   const actions = {
-    getThemeData:(context)=>{
-        axios.get('static/theme.json').then((res)=>{
+    getDiseaseData:(context)=>{
+        axios.get('static/disease.json').then((res)=>{
             return res.data.data;
         }).then((data)=>{
-            context.commit('setThemeData',data);
+            context.commit('setDiseaseData',data);
 
         })
     }
@@ -27,17 +27,18 @@ const state = {
   
   // mutations
   const mutations = {
-      setThemeData:(state,data)=>{
+      setDiseaseData:(state,data)=>{
         var temp=[];
         for(var i=0;i<data.length;i++){
             let t={
                 value:data[i].percent,
-                name:data[i].theme
+                name:data[i].disease
             }
             temp.push(t);
         }
         
-        state.theme_data=temp;
+        state.disease_data=temp;
+        console.log(state.disease_data);
         
       }
   }
