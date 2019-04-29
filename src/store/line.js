@@ -16,8 +16,8 @@ const state = {
         axios.get('static/linelist.json').then((res)=>{
             return res.data.data;
         }).then((data)=>{
+          console.log(data);
             context.commit('setLineList',data);
-
         })
     }
     
@@ -28,8 +28,15 @@ const state = {
   // mutations
   const mutations = {
     setLineList:(state,data)=>{
+      let temp=[];
+        for(let i=0;i<data.length;i++){
+          let t={};
+            t.datasets=data[i].datasets;
+            t.title=data[i].title;
+            temp.push(t)
+        }
         
-        state.setLineList=data;
+        state.line_list=temp;
         
       }
   }

@@ -33,6 +33,7 @@
   import Disease from './Disease.vue'
   import Map from './Map.vue'
   import CityPosting from './CityPosting.vue'
+  import CityLine from './line.vue'
 
 export default {
   data() {
@@ -79,7 +80,8 @@ export default {
     Theme,
     Disease,
     Map,
-    CityPosting
+    CityPosting,
+    CityLine
     
   }
 }
@@ -119,6 +121,7 @@ export default {
     text-align: center;
     transition:all 0.8s;
     background:rgba(32, 32, 35, 0.5);
+    overflow:auto;
 }
     
 
@@ -126,7 +129,7 @@ export default {
 .flex-container.column{
     position:relative;
     height: 600px;
-    width: 90%;
+    width: 100%;
     overflow: hidden;
     margin:  50px auto 50px auto;
     box-sizing: content-box;

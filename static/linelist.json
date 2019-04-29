@@ -1,0 +1,25 @@
+{
+    "data":[
+                {
+                    "datasets": [{
+                            "label": "Data One",
+                            "borderColor": "#FC2525",
+                            "pointBackgroundColor": "white",
+                            "borderWidth": 1,
+                            "pointBorderColor": "white",
+                            "backgroundColor":"#FC2525",
+                            "data": [70, 39, 10, 40, 39, 80, 40]
+                        },
+                        {
+                            "label": "Data Two",
+                            "borderColor": "#05CBE1",
+                            "pointBackgroundColor": "white",
+                            "borderWidth": 1,
+                            "pointBorderColor": "white",
+                            "backgroundColor":"#05CBE1",
+                            "data": [90, 20, 10, 80, 19, 80, 30]
+                        }],
+                    "title":"ksjdkjdk"
+                }
+    ]
+}
