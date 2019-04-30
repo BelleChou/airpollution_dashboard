@@ -1,10 +1,10 @@
 const ThemeController = require('../controllers/theme')
-const router = require('koa-router')()
+const router = require('koa-router')();
 
-//const router = new Router();
-
-// router.get('/',(ctx)=>{
-//     ctx.body="welcome"
-// });
+router.get('/',(ctx)=>{
+    ctx.body="welcome"
+});
 
 router.get('/theme',ThemeController.allTheme);
+
+module.exports = router
