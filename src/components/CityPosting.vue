@@ -2,7 +2,7 @@
     <div class="city-linechart">
         <div class="line" v-for="(lineitem,index) in lineList">
             <h2>{{lineitem.title}}</h2>
-            <base-line :datasets="lineitem.datasets"></base-line>
+            <base-line :dataAQI="lineitem.dataAQI" :dataPosts="lineitem.dataPosts"></base-line>
         </div>
         
     </div>

@@ -34,7 +34,7 @@
   import Map from './Map.vue'
   import CityPosting from './CityPosting.vue'
   import CityLine from './line.vue'
-
+  
 export default {
   data() {
     return {
@@ -81,7 +81,8 @@ export default {
     Disease,
     Map,
     CityPosting,
-    CityLine
+    CityLine,
+  
     
   }
 }

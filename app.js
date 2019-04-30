@@ -1,9 +1,9 @@
-const App = require('koa'),
-  router = require('koa-router')(),
-  json = require('koa-json'),
-  logger = require('koa-logger'),
-  auth = require('./server/routes/auth.js'); // 引入auth
-const app=new App()
+const Koa = require('koa');
+var routers = require('./server/routes/index');
+const json = require('koa-json');
+const logger = require('koa-logger');
+ 
+const app=new Koa()
 
 app.use(require('koa-bodyparser')());
 app.use(json());
@@ -17,8 +17,8 @@ app.use(async (ctx,next) => {
 
 });
 
-router.use('/auth', auth.routes()); // 挂载到koa-router上，同时会让所有的auth的请求路径前面加上'/auth'的请求路径。
-app.use(router.routes()); // 将路由规则挂载到Koa上。
+
+app.use(routers.routes()).use(routers.allowedMethods());
 
 
 // 在端口3000监听:

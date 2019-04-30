@@ -13,12 +13,21 @@ const state = {
   // actions
   const actions = {
     getLineList:(context)=>{
+    //   setInterval(() => {
+    //     axios.get('static/linelist.json').then((res)=>{
+    //       return res.data.data;
+    //   }).then((data)=>{
+    //     console.log(data);
+    //       context.commit('setLineList',data);
+    //   })
+    // }, 6000);
         axios.get('static/linelist.json').then((res)=>{
-            return res.data.data;
-        }).then((data)=>{
-          console.log(data);
-            context.commit('setLineList',data);
-        })
+          return res.data.data;
+      }).then((data)=>{
+        console.log(data);
+          context.commit('setLineList',data);
+      })
+        
     }
     
   
@@ -31,7 +40,8 @@ const state = {
       let temp=[];
         for(let i=0;i<data.length;i++){
           let t={};
-            t.datasets=data[i].datasets;
+            t.dataAQI=data[i].dataAQI;
+            t.dataPosts=data[i].dataPosts;
             t.title=data[i].title;
             temp.push(t)
         }
