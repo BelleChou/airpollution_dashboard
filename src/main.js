@@ -17,10 +17,8 @@ import 'echarts-wordcloud/dist/echarts-wordcloud.min'
 
 window.axios = require('axios');
 //window.axios.defaults.baseURL= 'static';
+window.axios.defaults.baseURL = 'http://127.0.0.1:3000'
 
-if (/http:\/\/localhost|http:\/\/127.0.0.1/.test(location.href)) {
-  window.axios.defaults.baseURL = 'http://127.0.0.1:3000'
-}
 
 console.log(window.axios.defaults.baseURL);
 
