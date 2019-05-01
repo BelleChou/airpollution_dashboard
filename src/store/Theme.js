@@ -12,7 +12,7 @@ const state = {
   // actions
   const actions = {
     getThemeData:(context)=>{
-        axios.get('/theme').then((res)=>{
+        axios.get('/static/theme.json').then((res)=>{
             return res.data.data;
         }).then((data)=>{
           console.log(data);
