@@ -21,7 +21,7 @@ const state = {
     //       context.commit('setLineList',data);
     //   })
     // }, 6000);
-        axios.get('/linelist').then((res)=>{
+        axios.get('/static/linelist.json').then((res)=>{
           return res.data.data;
       }).then((data)=>{
         
