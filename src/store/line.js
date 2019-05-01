@@ -35,6 +35,7 @@ const state = {
   }
   
   // mutations
+  //注意对象只能存成字符串形式
   const mutations = {
     setLineList:(state,data)=>{
       let temp=[];
