@@ -1,4 +1,3 @@
-import axios from 'axios'
 const state = {
     theme_data:[],
   }
@@ -13,9 +12,10 @@ const state = {
   // actions
   const actions = {
     getThemeData:(context)=>{
-        axios.get('static/theme.json').then((res)=>{
+        axios.get('/theme').then((res)=>{
             return res.data.data;
         }).then((data)=>{
+          console.log(data);
             context.commit('setThemeData',data);
 
         })

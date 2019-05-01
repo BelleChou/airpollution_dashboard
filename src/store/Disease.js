@@ -20,9 +20,6 @@ const state = {
 
         })
     }
-    
-  
-    
   }
   
   // mutations

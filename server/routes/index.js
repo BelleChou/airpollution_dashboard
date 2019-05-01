@@ -1,4 +1,5 @@
 const ThemeController = require('../controllers/theme')
+const LinelistController = require('../controllers/linelist')
 const router = require('koa-router')();
 
 router.get('/',(ctx)=>{
@@ -6,5 +7,7 @@ router.get('/',(ctx)=>{
 });
 
 router.get('/theme',ThemeController.allTheme);
+
+router.get('/linelist', LinelistController.allLine);
 
 module.exports = router

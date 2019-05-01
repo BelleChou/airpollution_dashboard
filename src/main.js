@@ -15,6 +15,9 @@ Vue.prototype.$echarts = echarts //引入组件
 import 'echarts-wordcloud/dist/echarts-wordcloud'
 import 'echarts-wordcloud/dist/echarts-wordcloud.min'
 
+window.axios = require('axios');
+window.axios.defaults.baseURL = 'http://127.0.0.1:3000'
+
 new Vue({
   el: '#app',
   router,

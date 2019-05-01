@@ -10,5 +10,5 @@ const sequelize = new Sequelize('mysql://root:Belle19970906@localhost/airpolluti
 })
 
 module.exports = {
-  sequelize // 将Todolist暴露出接口方便Model调用
+  sequelize // 暴露出接口方便Model调用
 }
