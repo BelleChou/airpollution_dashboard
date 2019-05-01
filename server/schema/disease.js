@@ -3,7 +3,7 @@
 module.exports = function(sequelize, DataTypes) {
   return sequelize.define('disease', {
     id: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.INTEGER(11),
       allowNull: false,
       primaryKey: true
     },
@@ -12,7 +12,7 @@ module.exports = function(sequelize, DataTypes) {
       allowNull: true
     },
     percent: {
-      type: DataTypes.STRING(255),
+      type: DataTypes.INTEGER(11),
       allowNull: true
     }
   }, {

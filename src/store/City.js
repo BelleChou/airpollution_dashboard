@@ -208,7 +208,7 @@ const state = {
   // actions
   const actions = {
     getCityAQIData:(context)=>{
-        axios.get('/static/city.json').then((res)=>{
+        axios.get('/city').then((res)=>{
             return res.data.data;
         }).then((data)=>{
             context.commit('setCityAQIData',data);
