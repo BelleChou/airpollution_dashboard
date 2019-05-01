@@ -40,8 +40,8 @@ const state = {
       let temp=[];
         for(let i=0;i<data.length;i++){
           let t={};
-            t.dataAQI=JSON.parse(data[i].dataAQI);
-            t.dataPosts=JSON.parse(data[i].dataPosts);
+            t.dataAQI=data[i].dataAQI;
+            t.dataPosts=data[i].dataPosts;
             t.title=data[i].title;
             temp.push(t)
         }
