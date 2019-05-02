@@ -11,14 +11,11 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
-      '/auth':{
-        target:'http://localhost:3000',
-        changeOrigin:true
+      '/location':{
+        target:'http://api.map.baidu.com',
+        changeOrigin:true,
       },
-      '/api':{
-        target: 'http://localhost:3000',
-        changeOrigin: true
-      }
+      
     },
 
     // Various Dev Server settings

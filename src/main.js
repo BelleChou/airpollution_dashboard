@@ -14,9 +14,15 @@ Vue.prototype.$echarts = echarts //引入组件
 //添加字符云，前提要有echarts
 import 'echarts-wordcloud/dist/echarts-wordcloud'
 import 'echarts-wordcloud/dist/echarts-wordcloud.min'
+import BaiduMap from 'vue-baidu-map'
+Vue.use(BaiduMap, {
+  /* Visit http://lbsyun.baidu.com/apiconsole/key for details about app key. */
+  ak: 'wKln3QG3LFd7rh6FF3zdf3tFB7aQaEgQ'
+})
 
 window.axios = require('axios');
-window.axios.defaults.baseURL= 'https://bellechou.github.io/airpollution_dashboard/dist';
+//修改前端发送的网址
+//window.axios.defaults.baseURL= 'https://bellechou.github.io/airpollution_dashboard/dist';
 //window.axios.defaults.baseURL = 'http://127.0.0.1:3000'
 
 

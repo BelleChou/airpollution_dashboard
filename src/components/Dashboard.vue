@@ -1,9 +1,9 @@
 <template>
   <div class="page">
+    <particles></particles>
     <div class="container">
       <div class="dashboard-header">
-        <img :src="HeaderLogo">
-        <div class="header-title">Air Pollution Dashboard</div>
+        <dheader></dheader>
       </div>
       <div class="flex-container column">
           <div class="item one" @click="clickChart('1')" style="transform: translate(-22.4%,-33.5%) scale(0.33)">
@@ -27,6 +27,7 @@
 </template>
 
 <script>
+  import dheader from './dheader.vue'
   import Footer from './Footer.vue'
   import HeaderLogo from '@/assets/header.png'
   import Theme from './Theme.vue'
@@ -34,7 +35,7 @@
   import Map from './Map.vue'
   import CityPosting from './CityPosting.vue'
   import CityLine from './line.vue'
-  
+  import particles from '@/components/Particles'
 export default {
   data() {
     return {
@@ -82,6 +83,8 @@ export default {
     Map,
     CityPosting,
     CityLine,
+    dheader,
+    particles
   
     
   }
@@ -90,7 +93,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+.container{ //盖过particle.js
+  z-index:999;
+  position: relative;
+}
 .dashboard-header{
   position: relative;
   height:80px;
