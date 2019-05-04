@@ -124,21 +124,21 @@ export default {
     width: 68%;
     height: 100%;
     position:absolute;
-    transform:scale(0.33);
+    transform:scale(0.23);
     text-align: center;
     transition:all 0.8s;
     background:rgba(32, 32, 35, 0.5);
-    overflow:auto;
+    overflow:hidden;
 }
     
 
     
 .flex-container.column{
     position:relative;
-    height: 600px;
-    width: 100%;
+    height: 70%;
+    width: 90%;
     overflow: hidden;
-    margin:  50px auto 50px auto;
+    margin:  37px auto 10px auto;
     box-sizing: content-box;
 }
 
@@ -146,6 +146,6 @@ export default {
     height:100%;
     width: 69%;
     margin-left: 10px;
-    line-height: 300px;
+    //line-height: 300px;
 }    
 </style>

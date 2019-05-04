@@ -4,18 +4,20 @@
 	        <div class="t-title">
 	            Air Pollution Dashboard
 	        </div> 
-			<div style="background:red;position:relative;z-index:1;"><baidu></baidu></div>
+			<div >
+				<AQI></AQI>
+			</div>
 	    </div>
 	</div>
 </template>
 
 <script>
 import { defaultCipherList } from 'constants';
-import baidu from '@/api/baidu'
+import AQI from '@/api/AQI'
 export default {
 	name: 'dheader',
 	components:{
-		baidu
+		AQI
 	}
 }
 </script>

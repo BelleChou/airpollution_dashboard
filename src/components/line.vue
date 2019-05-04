@@ -33,20 +33,19 @@
         let data = {
           datasets:  [{
                             label: "Data One",
-                            borderColor: "#FC2525",
+                            borderColor: "#2c3e50",
                             pointBackgroundColor: "white",
                             borderWidth: 1,
                             pointBorderColor: "white",
-                            backgroundColor:"#FC2525",
                             data: this.dataAQI
                         },
                         {
                             label: "Data Two",
-                            borderColor: "#05CBE1",
+                            borderColor: "#CD2626",
                             pointBackgroundColor: "white",
                             borderWidth: 1,
                             pointBorderColor: "white",
-                            backgroundColor:"#05CBE1",
+                            // backgroundColor:"#CD3333",
                             data: this.dataPosts
                         }],
           // These labels appear in the legend and in the tooltips when hovering different arcs
@@ -55,7 +54,7 @@
 
         let options = {
           legend:{
-            display: false,
+            display: true,
           },
           responsive: true, 
           maintainAspectRatio: false

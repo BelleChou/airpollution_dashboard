@@ -1,7 +1,18 @@
 <template>
-    <div id="mapcity" style="height:100%;width:100%;"></div>
+<div class="map">
+    <div id="mapcity"></div>
+</div>
 </template>
-
+<style>
+.map{
+    height:100%;
+    width:100%;
+}
+#mapcity{
+    height:100%;
+    width:100%;
+}
+</style>
 <script>
 import {mapActions,mapGetters} from 'vuex';
 import china from 'echarts/map/js/china'; 
@@ -16,7 +27,7 @@ export default {
         cityAQIData(){
             var myChartMap = this.$echarts.init(document.getElementById('mapcity'));
             myChartMap.setOption({
-            backgroundColor: '#e6e2e4',
+            // backgroundColor: '#e6e2e4',
             title : {
                 text: 'AQI in main cities of China',
                 x:'center',

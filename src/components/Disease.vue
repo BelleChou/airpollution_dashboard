@@ -1,6 +1,18 @@
 <template>
-        <div id="wordCloud" :style="{width: '100%', height: '100%'}"></div>
-    </template>
+    <div class="disease">
+        <div id="wordCloud"></div>
+    </div>
+</template>
+<style>
+.disease{
+    height:100%;
+    width:100%;
+}
+#wordCloud{
+    height:100%;
+    width:100%;
+}
+</style>
 <script>
 import {mapGetters} from 'vuex'
 export default {

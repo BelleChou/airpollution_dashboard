@@ -11,6 +11,10 @@ module.exports = {
     assetsSubDirectory: 'static',
     assetsPublicPath: '/',
     proxyTable: {
+      '/feed':{
+        target:'http://api.waqi.info',
+        changeOrigin:true,
+      },
       '/location':{
         target:'http://api.map.baidu.com',
         changeOrigin:true,
