@@ -57,6 +57,7 @@ export default{
 </script>
 
 <style lang="scss" scoped>
+
 .bg{
     background:url(../assets/border_bg01.png) no-repeat;
     background-size: 220px 80px;
@@ -86,6 +87,7 @@ export default{
     font-size: 1.3rem;
     font-weight: 500;
     text-shadow:#fff 1px 0px 1px;
+    position:relative;
 }
 .time{
     color:#cdf7f1;
