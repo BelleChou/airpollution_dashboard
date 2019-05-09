@@ -62,14 +62,15 @@ export default {
                     show: true
                 },
                 series: [{
-                    name: 'Google Trends',
+                    name: 'Disease Trends Under Air Polluiton',
                     type: 'wordCloud',
                     size: ['80%', '80%'],
+                    sizeRange: [6, 150],
                     textRotation : [0, 45, 90, -45],
                     textPadding: 0,
                     autoSize: {
                         enable: true,
-                        minSize: 14
+                        minSize: 20
                     },
                         textStyle: {//文字样式设置
                         normal: {

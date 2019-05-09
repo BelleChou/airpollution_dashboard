@@ -52,8 +52,8 @@ export default {
                 data:['订单量']
             },
             visualMap: {
-                min: 0,
-                max: 200,
+                min: 200,
+                max: 35000,
                 bottom: 50,
                 splitNumber: 5,
                 inRange: {
@@ -108,7 +108,7 @@ export default {
                     type: 'scatter',
                     coordinateSystem: 'geo',
                     symbolSize: function(val) {
-                    return val[2] / 6;
+                    return val[2] / 500;
                 },
                 label: {
                     normal: {

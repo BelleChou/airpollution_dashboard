@@ -1,7 +1,7 @@
 <template>
     <div class="weather-box">
             <div class="left-box bg">
-                <p class="time">{{nowTime}}</p>
+                <p class="time">{{getNowTime}}</p>
             </div>
             <div class="right-box bg">
                 <p class="aqi"><span>AQI:</span>{{cityaqi}}</p>
@@ -13,13 +13,18 @@
 </template>
 <script>
 import locationIcon from '@/assets/location_on.png'
+import moment from 'moment'
 export default{
     data(){
         return{
-            cityaqi:0,
-            nowTime:0,
+            cityaqi:127,
             city:null,
             locationIcon
+        }
+    },
+    computed:{
+        getNowTime(){
+            return moment().format('MMMM Do YYYY, h:mm:ss a');
         }
     },
     mounted(){
@@ -34,8 +39,6 @@ export default{
                 }}
             ).then((res)=>{
                 this.cityaqi = res.data.data.aqi;
-                
-                this.nowTime = res.data.data.debug.sync;
                 console.log(res.data.data)
             })
         },

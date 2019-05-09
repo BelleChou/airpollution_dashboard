@@ -32,7 +32,7 @@
         // Overwriting base render method with actual data.
         let data = {
           datasets:  [{
-                            label: "Data One",
+                            label: "AQI",
                             borderColor: "#2c3e50",
                             pointBackgroundColor: "white",
                             borderWidth: 1,
@@ -40,7 +40,7 @@
                             data: this.dataAQI
                         },
                         {
-                            label: "Data Two",
+                            label: "POSTINGS",
                             borderColor: "#CD2626",
                             pointBackgroundColor: "white",
                             borderWidth: 1,
@@ -49,7 +49,8 @@
                             data: this.dataPosts
                         }],
           // These labels appear in the legend and in the tooltips when hovering different arcs
-          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July']
+          labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July','August','September'
+          ,'October','November','December']
         }
 
         let options = {

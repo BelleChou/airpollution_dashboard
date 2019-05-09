@@ -13,7 +13,7 @@ const state = {
   // actions
   const actions = {
     getDiseaseData:(context)=>{
-        axios.get('/disease').then((res)=>{
+        axios.get('/api/disease').then((res)=>{
             return res.data.data;
         }).then((data)=>{
             context.commit('setDiseaseData',data);

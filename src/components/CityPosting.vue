@@ -1,6 +1,6 @@
 <template>
     <div class="city-linechart">
-        <h2>Positng and </h2>
+        <h2>The relation between Positngs and AQI </h2>
         <el-tabs>
             <el-tab-pane class="line" v-for="(lineitem,index) in lineList" :label="lineitem.title" :key="index">
                 <base-line class="baseline" :dataAQI="lineitem.dataAQI" :dataPosts="lineitem.dataPosts"></base-line>
@@ -9,7 +9,10 @@
         
     </div>
 </template>
-<style lang="scss" scoped>
+<style lang="scss">
+.el-tabs__item{
+    color: #ccc !important;
+}
 .el-tabs{
     margin-left:10px;
     margin-right:10px;
