@@ -21,7 +21,7 @@ const state = {
     //       context.commit('setLineList',data);
     //   })
     // }, 6000);
-        axios.get('/static/linelist.json').then((res)=>{
+        axios.get('/linelist').then((res)=>{
           return res.data.data;
       }).then((data)=>{
         
@@ -35,13 +35,14 @@ const state = {
   }
   
   // mutations
+  //注意对象只能存成字符串形式
   const mutations = {
     setLineList:(state,data)=>{
       let temp=[];
         for(let i=0;i<data.length;i++){
           let t={};
-            t.dataAQI=data[i].dataAQI;
-            t.dataPosts=data[i].dataPosts;
+            t.dataAQI=JSON.parse(data[i].dataAQI);
+            t.dataPosts=JSON.parse(data[i].dataPosts);
             t.title=data[i].title;
             temp.push(t)
         }

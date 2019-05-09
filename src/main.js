@@ -21,9 +21,8 @@ Vue.use(BaiduMap, {
 })
 
 window.axios = require('axios');
-//修改前端发送的网址
-//window.axios.defaults.baseURL= 'https://bellechou.github.io/airpollution_dashboard/dist';
-//window.axios.defaults.baseURL = 'http://127.0.0.1:3000'
+//window.axios.defaults.baseURL= 'https://bellechou.github.io/demo/dist';
+window.axios.defaults.baseURL = 'http://127.0.0.1:3000'
 
 
 console.log(window.axios.defaults.baseURL);
